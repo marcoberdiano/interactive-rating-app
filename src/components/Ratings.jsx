@@ -1,7 +1,7 @@
 import {CircleRating} from '../css/style'
 import {useState} from 'react';
 
-const Ratings = () => {
+const Ratings = ({onClick}) => {
 
     //const [isSelect, setIsSelect] = useState(false);
 
@@ -14,35 +14,45 @@ const Ratings = () => {
     const handleClick = ({target}) => {
         switch(target.innerText) {
             case '1':
+                onClick('1')
                 SetRating1(!rating1)
+                
                 SetRating2(false)
                 SetRating3(false)
                 SetRating4(false)
                 SetRating5(false)
                 break;
             case '2':
+                onClick('2');
                 SetRating2(!rating2)
+                
                 SetRating1(false)
                 SetRating3(false)
                 SetRating4(false)
                 SetRating5(false)
                 break;
             case '3':
+                onClick('3');
                 SetRating3(!rating3)
+                
                 SetRating2(false)
                 SetRating1(false)
                 SetRating4(false)
                 SetRating5(false)
                 break;
             case '4':
+                onClick('4');
                 SetRating4(!rating4)
+                
                 SetRating2(false)
                 SetRating3(false)
                 SetRating1(false)
                 SetRating5(false)
                 break;
             case '5':
+                onClick('5');
                 SetRating5(!rating5)
+                
                 SetRating2(false)
                 SetRating3(false)
                 SetRating4(false)

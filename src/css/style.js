@@ -7,6 +7,23 @@ export const Card = styled.div`
     width: 400px;
 `
 
+export const CardThanYouCenter = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const Img = styled.div`
+`
+export const RatingSelected = styled.p`
+    color: var(--Orange);
+    background: var(--VeryDarkBlue);
+    border-radius: 30px;
+    padding: 0.3rem 0.5rem;
+    margin: 15px 0px
+`
+
 export const Circle = styled.div`
     background: ${props => props.isSelect ? 'var(--LightGrey)' : 'var(--VeryDarkBlue)'};
     color: ${props => props.isSelect ? 'var(--White)' : 'var(--MediumGrey)'};
@@ -35,6 +52,10 @@ export const Paragraph = styled.p`
     color: var(--MediumGrey);
     font-size: 15px;
     margin: 15px 0px;
+`
+
+export const ParagraphThankYou = styled(Paragraph)`
+text-align: center;
 `
 
 export const RatingContainer = styled.div`

@@ -1,12 +1,12 @@
 import './css/App.css';
-import CardRating from './components/CardRating';
+import Feedback from './components/Feedback';
 
 function App() {
   
   return (
     <div>
       <main>
-        <CardRating/>
+        <Feedback/>
       </main>
     </div>
   );
