@@ -25,8 +25,8 @@ export const RatingSelected = styled.p`
 `
 
 export const Circle = styled.div`
-    background: ${props => props.isSelect ? 'var(--LightGrey)' : 'var(--VeryDarkBlue)'};
-    color: ${props => props.isSelect ? 'var(--White)' : 'var(--MediumGrey)'};
+    background: var(--VeryDarkBlue);
+    color: var(--MediumGrey);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -34,6 +34,13 @@ export const Circle = styled.div`
     grid-template-columns: auto;
     place-content: center;
 `
+
+export const CircleAtive = styled(Circle)`
+    background: var(--LightGrey);
+    color: var(--White);
+    cursor: pointer; 
+`
+
 
 export const CircleRating = styled(Circle)`
     &:hover{

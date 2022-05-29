@@ -8,14 +8,12 @@ export const Feedback = () => {
     const [ratingValue, setRatingValue] = useState('0');
 
     const handleRating = (value) => {
-        value === ratingValue ? setRatingValue('0') : setRatingValue(value)
+        setRatingValue(value);
     }
 
     const handleSent = () => {
         SetSent(true);
     }
-
-    console.log(ratingValue);
 
     return (
         <div> 
