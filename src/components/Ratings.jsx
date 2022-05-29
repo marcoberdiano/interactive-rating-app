@@ -16,7 +16,7 @@ const Ratings = ({onClick}) => {
         <>
             {ratings.map( (item, index) => 
                 
-                rating === (index+1).toString() || '' 
+                rating === (index+1).toString() 
                 
                 ?   <CircleAtive key={index} onClick={handleClick}>
                         <span>{item}</span>

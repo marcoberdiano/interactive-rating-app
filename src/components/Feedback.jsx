@@ -18,7 +18,7 @@ export const Feedback = () => {
     return (
         <div> 
             {!sent
-             ? <CarRating handleRating = {handleRating} handleSent = {handleSent}/>
+             ? <CarRating handleRating = {handleRating} handleSent = {handleSent} ratingValue={ratingValue}/>
              : <ThankYouCard ratingValue={ratingValue}></ThankYouCard>
              }
         </div>

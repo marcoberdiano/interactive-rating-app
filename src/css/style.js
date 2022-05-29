@@ -4,7 +4,7 @@ export const Card = styled.div`
     background: var(--DarkBlue);
     border-radius: 20px;
     padding: 30px;
-    width: 400px;
+    width: 360px;
 `
 
 export const CardThanYouCenter = styled.div`
@@ -62,7 +62,7 @@ export const Paragraph = styled.p`
 `
 
 export const ParagraphThankYou = styled(Paragraph)`
-text-align: center;
+    text-align: center;
 `
 
 export const RatingContainer = styled.div`
@@ -73,24 +73,20 @@ export const RatingContainer = styled.div`
 `
 
 export const Button = styled.button`
-    background: transparent;
+    background: ${props => props.disabled ? 'var(--LightGrey)' : 'var(--Orange)'};
     border-radius: 30px;
-    border: 2px solid var(--Orange);
-    color: var(--Orange);
+    border: 2px solid ${props => props.disabled ? 'var(--LightGrey)' : 'var(--Orange)'};
+    color: ${props => props.disabled ? 'var(--MediumGrey)'  : 'var(--White)'};
     margin: 15px 0px;
     padding: 1em 1.25em;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 3px;
-    ${props => props.primary && css`
-        color: white;
-        background: var(--Orange);
-    `}
 
     &:hover {
-        background: var(--White);
-        cursor: pointer;
-        color: var(--Orange);
-        border: 2px solid var(--White);
+        background: ${props => props.disabled ? 'var(--LightGrey)' : 'var(--White)'};
+        cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'}; 
+        color: ${props => props.disabled ? 'var(--MediumGrey)'  : 'var(--Orange)'};
+        border: 2px solid ${props => props.disabled ? 'var(--LightGrey)' : 'var(--White)'};
     }
 `;

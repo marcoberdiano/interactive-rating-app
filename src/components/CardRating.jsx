@@ -5,9 +5,10 @@ import {
     Title, 
     Paragraph,
     RatingContainer, 
-    Button } from '../css/style';
+    Button
+     } from '../css/style';
 
-const CarRating = ({handleRating,handleSent}) => {
+const CarRating = ({handleRating,handleSent, ratingValue}) => {
     return ( 
     <Card>
 
@@ -28,7 +29,9 @@ const CarRating = ({handleRating,handleSent}) => {
 
         </RatingContainer>
 
-        <Button primary onClick={handleSent}>Submit</Button>
+       
+         <Button onClick={handleSent} disabled={ratingValue==='0'}>Submit</Button>
+       
 
     </Card> );
 }
