@@ -3,7 +3,7 @@ import {useState} from 'react';
 
 const Ratings = () => {
 
-    const [isSelect, setIsSelect] = useState(false);
+    //const [isSelect, setIsSelect] = useState(false);
 
     const [rating1, SetRating1] = useState(false);
     const [rating2, SetRating2] = useState(false);
