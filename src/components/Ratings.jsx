@@ -58,7 +58,7 @@ const Ratings = () => {
                         <span >
                             1
                         </span>
-                    </CircleRating>
+                    </CircleRating> 
 
                     <CircleRating isSelect={rating2} onClick={handleClick}>
                         <span >
