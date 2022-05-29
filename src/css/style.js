@@ -25,20 +25,14 @@ export const RatingSelected = styled.p`
 `
 
 export const Circle = styled.div`
-    background: var(--VeryDarkBlue);
-    color: var(--MediumGrey);
+    background: ${props => props.isAtive ? 'var(--LightGrey)' : 'var(--VeryDarkBlue)' };
+    color: ${props => props.isAtive ? 'var(--White)' : 'var(--MediumGrey)' };
     height: 40px;
     width: 40px;
     border-radius: 50%;
     display: grid;
     grid-template-columns: auto;
     place-content: center;
-`
-
-export const CircleAtive = styled(Circle)`
-    background: var(--LightGrey);
-    color: var(--White);
-    cursor: pointer; 
 `
 
 

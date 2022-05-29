@@ -30,7 +30,7 @@ const CarRating = ({handleRating,handleSent, ratingValue}) => {
         </RatingContainer>
 
        
-         <Button onClick={handleSent} disabled={ratingValue==='0'}>Submit</Button>
+        <Button onClick={handleSent} disabled={ratingValue==='0'}>Submit</Button>
        
 
     </Card> );

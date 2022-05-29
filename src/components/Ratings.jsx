@@ -1,4 +1,4 @@
-import {CircleRating, CircleAtive} from '../css/style'
+import {CircleRating} from '../css/style';
 import {useState} from 'react';
 
 const Ratings = ({onClick}) => {
@@ -14,17 +14,10 @@ const Ratings = ({onClick}) => {
     }
     return ( 
         <>
-            {ratings.map( (item, index) => 
-                
-                rating === (index+1).toString() 
-                
-                ?   <CircleAtive key={index} onClick={handleClick}>
+            {ratings.map( (item, index) =>     
+                <CircleRating key={index} onClick={handleClick} isAtive={rating === (index+1).toString()}>
                         <span>{item}</span>
-                    </CircleAtive> 
-                
-                :   <CircleRating key={index} onClick={handleClick}>
-                        <span>{item}</span>
-                    </CircleRating>
+                </CircleRating>
             )}
         </>);
 }
